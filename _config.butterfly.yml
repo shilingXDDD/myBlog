@@ -12,7 +12,7 @@
 nav:
   # Navigation bar logo image
   logo: /images/logo.png
-  display_title: true
+  display_title: false
   display_post_title: true
   # Whether to fix navigation bar
   fixed: false
@@ -23,8 +23,8 @@ menu:
   标签: /tags/ || fas fa-tags #标签
   分类: /categories/ || fas fa-folder-open #分类
   List||fas fa-list: #
-    Music: /Android/ || fas fa-Android #音乐
-    Movie: /agent/ || fas fa-agent #电影
+    Android: /Android/ || fas fa-Android #音乐
+    agent: /agent/ || fas fa-agent #电影
   友链: /link/ || fas fa-link #友情链接
   关于我: /about/ || fas fa-heart #关于
 
@@ -64,7 +64,7 @@ favicon: /img/logo.png
 
 avatar:
   img: /images/avatar.jpg
-  effect: true
+  effect: hover
 
 # Disable all banner images
 disable_top_img: false
@@ -150,13 +150,15 @@ post_meta:
 # The top_img settings of home page
 # default: top img - full screen, site info - middle
 # The position of site info, eg: 300px/300em/300rem/10%
-index_site_info_top:
+index_site_info_top: 30vh
 # The height of top_img, eg: 300px/300em/300rem
-index_top_img_height:
+index_top_img_height: 75vh
+
+main_content_margin_top: 120px
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -171,7 +173,7 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: it sucks, but you goona love it
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -291,7 +293,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 坚强一点，强大一点
     button:
       enable: true
       icon: fab fa-github
@@ -367,6 +369,10 @@ aside:
 
 # The distance between the bottom right button and the bottom (default unit: px)
 rightside_bottom:
+  readmode: true
+  translate: false # 如果只要中文可以关掉
+  darkmode: true  # 开启一键暗黑模式
+  hide: false
 
 # Conversion between Traditional and Simplified Chinese
 translate:
@@ -804,7 +810,7 @@ mask:
 
 # Loading Animation
 preloader:
-  enable: false
+  enable: true
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
@@ -995,7 +1001,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -1064,7 +1070,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     # - <script src="xxxx"></script>
 
