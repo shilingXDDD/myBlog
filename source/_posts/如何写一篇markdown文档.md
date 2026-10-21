@@ -5,6 +5,7 @@ categories:
     - 基础
 tags:
     - 基础
+cover: 6.jpg
 ---
 
 # “#”是一级标题
